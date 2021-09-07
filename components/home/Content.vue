@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="repo-separator"></div>
+      <div class="separator"></div>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
           <img src="@/assets/profile.jpeg" />
@@ -121,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="repo-separator"></div>
+      <div class="separator"></div>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
           <img src="@/assets/profile.jpeg" />
@@ -181,7 +181,7 @@
           </div>
         </div>
       </div>
-      <div class="repo-separator"></div>
+      <div class="separator"></div>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
           <img src="@/assets/profile.jpeg" />
@@ -241,7 +241,7 @@
           </div>
         </div>
       </div>
-      <div class="repo-separator"></div>
+      <div class="separator"></div>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
           <img src="@/assets/profile.jpeg" />
@@ -302,7 +302,72 @@
         </div>
       </div>
     </div>
-    <div class="content-right"></div>
+    <div class="content-right">
+      <h1>Explore repositories</h1>
+      <div class="content-right-explore">
+        <div class="content-right-explore-box">
+          <a href="#">kulshekhar/ts-jest</a>
+          <p>
+            A Jest transformer with source map support that lets you use Jest to
+            test projects written in TypeScript.
+          </p>
+          <div class="content-right-explore-box-footer">
+            <h1>
+              <div class="circle circle-blue"></div>
+              Typescript
+            </h1>
+            <a href="#" class="stars">
+              <svg
+                class="octicon octicon-star mr-1"
+                viewBox="0 0 16 16"
+                version="1.1"
+                width="16"
+                height="16"
+                fill="#8b949e"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
+                ></path>
+              </svg>
+              <span>5k</span>
+            </a>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <div class="content-right-explore-box">
+          <a href="#">vuejs/composition-api</a>
+          <p>Composition API plugin for Vue 2</p>
+          <div class="content-right-explore-box-footer">
+            <h1>
+              <div class="circle circle-blue"></div>
+              Typescript
+            </h1>
+            <a href="#" class="stars">
+              <svg
+                class="octicon octicon-star mr-1"
+                viewBox="0 0 16 16"
+                version="1.1"
+                width="16"
+                height="16"
+                fill="#8b949e"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
+                ></path>
+              </svg>
+              <span>2.5k</span>
+            </a>
+          </div>
+        </div>
+        <div class="show-more">
+          <a href="#">Explore more →</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -312,6 +377,9 @@ export default {};
 
 <style lang="scss">
 .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   position: fixed;
   right: 0;
   overflow-y: scroll;
@@ -321,19 +389,12 @@ export default {};
   padding: 30px 50px;
   padding-bottom: 15rem;
   &-left {
-    width: 60%;
+    width: 65%;
     & h1 {
       font-size: 1.6rem;
       line-height: 2.4rem;
       font-weight: 400;
       color: var(--repo-color);
-    }
-    & .repo-separator {
-      margin-top: 2rem;
-      background: var(--white);
-      opacity: 0.2;
-      width: 100%;
-      height: 0.1px;
     }
     &-repo {
       margin-top: 2.5rem;
@@ -415,21 +476,6 @@ export default {};
               font-weight: 400;
               line-height: 1.8rem;
               color: #8b949e;
-              & .circle {
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                margin-right: 5px;
-                &-yellow {
-                  background: #f1e05a;
-                }
-                &-green {
-                  background: #41b883;
-                }
-                &-blue {
-                  background: #3f8184;
-                }
-              }
             }
             & .stars {
               margin: 0 2rem;
@@ -485,6 +531,74 @@ export default {};
     }
   }
   &-right {
+    width: 35%;
+    padding: 0 30px;
+    padding-top: 2rem;
+    & h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 2.1rem;
+      color: var(--repo-color);
+    }
+    &-explore {
+      margin-top: 2rem;
+      &-box {
+        margin-top: 2rem;
+
+        & a {
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 1.8rem;
+          color: var(--repo-color);
+          &:hover {
+            color: var(--blue);
+          }
+        }
+        & p {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          color: #8b949e;
+          padding: 5px 0;
+        }
+        &-footer {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 1rem;
+          & h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.8rem;
+            color: #8b949e;
+          }
+          & a {
+            margin: 0 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+              span {
+                color: var(--blue);
+              }
+              svg {
+                fill: var(--blue);
+              }
+            }
+            & span {
+              font-size: 1.2rem;
+              font-weight: 400;
+              line-height: 1.8rem;
+              color: #8b949e;
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>

@@ -20,6 +20,7 @@ export default {
   css: [
     '~assets/style/main.scss',
     '~assets/style/color.scss',
+    '~assets/style/common.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

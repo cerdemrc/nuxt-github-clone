@@ -1,0 +1,36 @@
+.show-more {
+    margin-top: 2rem;
+    & a {
+      color: #8b949e;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.8rem;
+      &:hover {
+        color: var(--blue);
+      }
+    }
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    &-yellow {
+      background: #f1e05a;
+    }
+    &-green {
+      background: #41b883;
+    }
+    &-blue {
+      background: #3f8184;
+    }
+  }
+
+.separator {
+    background: var(--white);
+    opacity: 0.2;
+    width: 100%;
+    margin-top: 2rem;
+    height: 0.1px;
+}

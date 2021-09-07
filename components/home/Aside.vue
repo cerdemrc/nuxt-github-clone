@@ -143,7 +143,7 @@
         <div class="show-more">
           <a href="#">Show more</a>
         </div>
-        <div class="white-line"></div>
+        <div class="separator"></div>
         <div class="sub-info">
           <h1>Recent activity</h1>
           <p>
@@ -242,18 +242,6 @@ export default {};
         }
         & svg {
           margin-right: 6px;
-        }
-      }
-    }
-    & .show-more {
-      margin-top: 2rem;
-      & a {
-        color: #8b949e;
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 1.8rem;
-        &:hover {
-          color: var(--blue);
         }
       }
     }
