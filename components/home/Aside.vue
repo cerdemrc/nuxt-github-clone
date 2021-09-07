@@ -224,7 +224,7 @@ export default {
     }
     & input {
       margin-top: 1rem;
-      background: var(--main-color);
+      background: var(--bg-main);
       border: none;
       border: 1px solid var(--border-color);
       border-radius: 6px;
