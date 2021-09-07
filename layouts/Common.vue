@@ -1,18 +1,15 @@
 <template>
   <div>
     <Header />
-    <Aside />
     <Nuxt />
   </div>
 </template>
 
 <script>
-import Header from "@/components/common/Header";
-import Aside from "@/components/home/Aside";
+import Header from "@/components/home/Header";
 export default {
   components: {
     Header,
-    Aside,
   },
 };
 </script>

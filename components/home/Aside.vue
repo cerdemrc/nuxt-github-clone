@@ -163,13 +163,14 @@ export default {};
 <style lang="scss">
 .aside {
   background: var(--aside-color);
-  max-width: 35rem;
+  width: 23%;
   position: fixed;
   left: 0;
   height: 100vh;
   overflow-y: hidden;
   &-content {
     padding: 30px;
+    border-right: 1px solid #f0f6fc1a;
     &-title {
       display: flex;
       justify-content: space-between;
@@ -191,7 +192,6 @@ export default {};
         line-height: 2rem;
         padding: 4px 10px;
         border-radius: 6px;
-        text-decoration: none;
         & svg {
           margin-right: 3px;
         }
@@ -233,7 +233,6 @@ export default {};
         justify-content: center;
         align-items: center;
         color: var(--blue);
-        text-decoration: none;
         font-size: 1.4rem;
         line-height: 2.1rem;
         font-weight: 600;
@@ -253,7 +252,6 @@ export default {};
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 1.8rem;
-        text-decoration: none;
         &:hover {
           color: var(--blue);
         }

@@ -136,7 +136,6 @@ export default {};
           list-style-type: none;
           & li a {
             color: var(--white);
-            text-decoration: none;
             margin-left: 2rem;
             font-weight: 600;
             line-height: 2.1rem;
