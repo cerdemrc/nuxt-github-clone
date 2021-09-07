@@ -4,7 +4,7 @@
       <h1>All activity</h1>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
-          <img src="@/assets/user2.jpeg" />
+          <img src="@/assets/image/user2.jpeg" />
           <h2>
             <a href="#">stacy </a> starred
             <a href="#"> projectmesa/mesa </a>
@@ -64,7 +64,7 @@
       <div class="separator"></div>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
-          <img src="@/assets/profile.jpeg" />
+          <img src="@/assets/image/profile.jpeg" />
           <h2>
             <a href="#">cerdemrc </a> forked
             <a href="#"> vue-cp-cheatsheet </a>
@@ -124,7 +124,7 @@
       <div class="separator"></div>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
-          <img src="@/assets/user.jpg" />
+          <img src="@/assets/image/user.jpg" />
           <h2>
             <a href="#">george</a> created a repository
             <a href="#">job-search-web-app</a>
@@ -163,7 +163,7 @@
       <div class="separator"></div>
       <div class="content-left-repo">
         <div class="content-left-repo-title">
-          <img src="@/assets/profile.jpeg" />
+          <img src="@/assets/image/profile.jpeg" />
           <h2>
             <a href="#">cerdemrc</a> created a repository
             <a href="#">open-library</a>
@@ -671,7 +671,7 @@ export default {};
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 970px) {
   .content {
     width: 64%;
     padding: 30px 20px;
@@ -697,6 +697,31 @@ export default {};
     }
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
+  .content {
+    width: 100%;
+    &-left {
+      &-repo {
+        &-box {
+          margin: 10px 10px;
+        }
+        &-title {
+          & h2 {
+            flex-wrap: wrap;
+          }
+        }
+      }
+      &-footer {
+        p,
+        .subscribe {
+          align-items: flex-start;
+        }
+        & .octicon-light-bulb {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
 }
 </style>

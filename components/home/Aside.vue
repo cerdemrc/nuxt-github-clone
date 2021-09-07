@@ -153,11 +153,43 @@
         </div>
       </div>
     </div>
+    <div class="aside-mobile" v-if="isShowMobileMenu">
+      <div class="aside-mobile-content">
+        <input type="text" placeholder="Search GitHub" />
+        <div class="separator" />
+        <div class="aside-mobile-content-links">
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <div class="li-separator" />
+            <li><a href="#">Pull requests</a></li>
+            <div class="li-separator" />
+            <li><a href="#">Issues</a></li>
+            <div class="li-separator" />
+            <li><a href="#">Marketplace</a></li>
+            <div class="li-separator" />
+            <li><a href="#">Explore</a></li>
+            <div class="li-separator" />
+            <li><a href="#">Codespaces</a></li>
+            <div class="li-separator" />
+            <li><a href="#">Sponsors</a></li>
+            <div class="li-separator" />
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </aside>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    isShowMobileMenu: {
+      type: Boolean,
+      required: false,
+    },
+  },
+};
 </script>
 
 <style lang="scss">
@@ -249,14 +281,75 @@ export default {};
       }
     }
   }
+  &-mobile {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 970px) {
   .aside {
     background: var(--bg-aside);
     width: 36%;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
+  .aside {
+    display: none;
+  }
+  & .aside-mobile {
+    display: block;
+    background: var(--bg-header);
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      & input {
+        background: var(--bg-aside);
+        border: none;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        width: 100%;
+        max-width: 100%;
+        color: var(--text-primary);
+        padding: 5px;
+        font-weight: 400;
+        line-height: 2rem;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: var(--text-primary);
+          padding: 5px;
+          font-weight: 400;
+          line-height: 2rem;
+        }
+      }
+      &-links {
+        width: 100%;
+        & ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 100%;
+          list-style-type: none;
+          & .li-separator {
+            background: var(--white);
+            opacity: 0.2;
+            width: 100%;
+            height: 0.1px;
+          }
+          & li {
+            padding: 1rem 0;
+            & a {
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>
