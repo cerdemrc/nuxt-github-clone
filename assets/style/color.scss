@@ -1,13 +1,21 @@
 :root {
-    --header-color: #161B22;
-    --aside-color: #0D1117;
-    --main-color: #010409;
+    --bg-main: #010409;
+    --bg-aside: #0D1117;
+    --bg-header: #161B22;
+    --border-color: #2F3438;
+
+    --text-hover: #A0A6AC;
+
     --blue: #529AEC;
     --green: #238636;
     --hover-green: #2da144;
-    --white: #F0F6FC;
-    --input-border: #2F3438;
-    --text-hover: #A0A6AC;
-    --repo-color: #c9d1d9;
     --gold-color: #d29922;
+
+    --white: #F0F6FC;
+    --text-primary:#c9d1d9;
+    --text-secondary: #8b949e;
+
+
+
+
   }
