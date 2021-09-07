@@ -48,7 +48,10 @@
           </div>
         </div>
         <div class="header-content-right">
-          <div class="header-content-right-notification">
+          <div
+            class="header-content-right-notification"
+            title="You have unread notifications"
+          >
             <a href="#">
               <svg
                 aria-hidden="true"
@@ -69,6 +72,7 @@
                 ></path>
               </svg>
             </a>
+            <div class="notification-circle"></div>
           </div>
           <div class="header-content-right-plus">
             <a href="#">
@@ -259,8 +263,18 @@ export default {
       }
       &-notification {
         margin-right: 1.6rem;
+        position: relative;
         & svg:hover {
           fill: var(--text-hover);
+        }
+        & .notification-circle {
+          position: absolute;
+          top: -5px;
+          right: -3px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #2787f6;
         }
       }
       &-plus {
