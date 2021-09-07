@@ -93,7 +93,7 @@ export default {};
   margin: 0 auto;
 }
 .header {
-  background: var(--header-color);
+  background: var(--bg-header);
   padding: 1.6rem;
   font-size: 1.4rem;
   &-content {
@@ -110,13 +110,13 @@ export default {};
       }
       & input {
         margin-right: 1rem;
-        background: var(--main-color);
+        background: var(--bg-main);
         border: none;
-        border: 1px solid var(--input-border);
+        border: 1px solid var(--border-color);
         border-radius: 6px;
         width: 100%;
         max-width: 100%;
-        color: #c9d1d9;
+        color: var(--text-primary);
         padding: 5px;
         font-weight: 400;
         line-height: 2rem;
@@ -124,7 +124,7 @@ export default {};
           outline: none;
         }
         &::placeholder {
-          color: #c9d1d9;
+          color: var(--text-primary);
           padding: 5px;
           font-weight: 400;
           line-height: 2rem;
@@ -137,8 +137,6 @@ export default {};
           & li a {
             color: var(--white);
             margin-left: 2rem;
-            font-weight: 600;
-            line-height: 2.1rem;
             white-space: nowrap;
             &:hover {
               color: var(--text-hover);

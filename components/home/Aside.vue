@@ -4,7 +4,7 @@
       <div class="aside-content">
         <div class="aside-content-title">
           <h1>Repositories</h1>
-          <a href="#" class="button--green">
+          <a href="#" class="button button-green">
             <svg
               aria-hidden="true"
               height="16"
@@ -162,7 +162,7 @@ export default {};
 
 <style lang="scss">
 .aside {
-  background: var(--aside-color);
+  background: var(--bg-aside);
   width: 23%;
   position: fixed;
   left: 0;
@@ -177,21 +177,11 @@ export default {};
       align-items: center;
       & h1 {
         font-weight: 600;
-        font-size: 1.4rem;
-        color: var(--repo-color);
-        line-height: 2.1rem;
       }
-      & .button--green {
+      & .button-green {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: var(--green);
-        color: var(--white);
-        font-weight: 600;
-        font-size: 1.2rem;
-        line-height: 2rem;
-        padding: 4px 10px;
-        border-radius: 6px;
         & svg {
           margin-right: 3px;
         }
@@ -204,11 +194,11 @@ export default {};
       margin-top: 1rem;
       background: var(--main-color);
       border: none;
-      border: 1px solid var(--input-border);
+      border: 1px solid var(--border-color);
       border-radius: 6px;
       width: 100%;
       max-width: 100%;
-      color: var(--repo-color);
+      color: var(--text-primary);
       padding: 5px;
       font-weight: 400;
       line-height: 2rem;
@@ -216,7 +206,7 @@ export default {};
         outline: none;
       }
       &::placeholder {
-        color: var(--repo-color);
+        color: var(--text-primary);
         opacity: 0.4;
         padding: 5px;
         line-height: 2rem;
@@ -233,9 +223,6 @@ export default {};
         justify-content: center;
         align-items: center;
         color: var(--blue);
-        font-size: 1.4rem;
-        line-height: 2.1rem;
-        font-weight: 600;
         margin-top: 8px;
         &:hover {
           text-decoration: underline;
@@ -256,17 +243,20 @@ export default {};
       margin-top: 2rem;
       & h1 {
         font-weight: 600;
-        color: var(--repo-color);
-        line-height: 2.1rem;
       }
       & p {
-        color: #8b949e;
         margin-top: 1rem;
-        font-weight: 400;
-        line-height: 1.8rem;
-        font-size: 1.2rem;
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .aside {
+    background: var(--bg-aside);
+    width: 36%;
+  }
+}
+@media screen and (max-width: 415px) {
 }
 </style>

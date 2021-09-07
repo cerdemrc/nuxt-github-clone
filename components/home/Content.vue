@@ -41,7 +41,7 @@
             </div>
           </div>
           <div class="content-left-repo-box-button">
-            <a href="#">
+            <a href="#" class="button button-gray">
               <svg
                 class="octicon octicon-star mr-1"
                 viewBox="0 0 16 16"
@@ -101,7 +101,7 @@
             </div>
           </div>
           <div class="content-left-repo-box-button">
-            <a href="#">
+            <a href="#" class="button button-gray">
               <svg
                 class="octicon octicon-star mr-1"
                 viewBox="0 0 16 16"
@@ -140,7 +140,7 @@
             </div>
           </div>
           <div class="content-left-repo-box-button">
-            <a href="#">
+            <a href="#" class="button button-gray">
               <svg
                 class="octicon octicon-star mr-1"
                 viewBox="0 0 16 16"
@@ -200,7 +200,7 @@
             </div>
           </div>
           <div class="content-left-repo-box-button">
-            <a href="#">
+            <a href="#" class="button button-gray">
               <svg
                 class="octicon octicon-star mr-1"
                 viewBox="0 0 16 16"
@@ -388,7 +388,7 @@ export default {};
   position: fixed;
   right: 0;
   overflow-y: scroll;
-  background: var(--main-color);
+  background: var(--bg-main);
   width: 77%;
   height: 100vh;
   padding: 30px 50px;
@@ -398,8 +398,6 @@ export default {};
     & h1 {
       font-size: 1.6rem;
       line-height: 2.4rem;
-      font-weight: 400;
-      color: var(--repo-color);
     }
     &-repo {
       margin-top: 2.5rem;
@@ -422,16 +420,13 @@ export default {};
           font-weight: 400;
           & a {
             color: var(--white);
-            font-size: 1.4rem;
-            line-height: 2.1rem;
-            font-weight: 600;
             margin: 0 0.5rem;
             &:hover {
               color: var(--blue);
             }
           }
           & span {
-            color: #8b949e;
+            color: var(--text-secondary);
             font-size: 1.2rem;
             line-height: 2.1rem;
             font-weight: 400;
@@ -443,11 +438,11 @@ export default {};
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        background: var(--aside-color);
+        background: var(--bg-aside);
         border-radius: 1rem;
         padding: 15px 20px;
         margin: 10px 40px;
-        border: 1px solid #30363d;
+        border: 1px solid var(--border-color);
         &-title {
           display: flex;
           flex-direction: column;
@@ -455,18 +450,15 @@ export default {};
           align-items: flex-start;
           & a {
             font-size: 1.6rem;
-            font-weight: 600;
             line-height: 2rem;
-            color: var(--repo-color);
+            color: var(--text-primary);
             &:hover {
               color: var(--blue);
             }
           }
           & p {
             font-size: 1.4rem;
-            font-weight: 400;
             line-height: 2.1rem;
-            color: #8b949e;
             padding: 5px 0;
           }
           &-sub {
@@ -478,9 +470,7 @@ export default {};
               justify-content: center;
               align-items: center;
               font-size: 1.2rem;
-              font-weight: 400;
-              line-height: 1.8rem;
-              color: #8b949e;
+              color: var(--text-secondary);
             }
             & .stars {
               margin: 0 2rem;
@@ -499,15 +489,9 @@ export default {};
                 font-size: 1.2rem;
                 font-weight: 400;
                 line-height: 1.8rem;
-                color: #8b949e;
+                color: var(--text-secondary);
                 margin-left: 3px;
               }
-            }
-            & p {
-              font-size: 1.2rem;
-              font-weight: 400;
-              line-height: 1.8rem;
-              color: #8b949e;
             }
           }
         }
@@ -516,19 +500,9 @@ export default {};
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid #8b949e6b;
             padding: 4px 12px;
-            border-radius: 5px;
-            background: #21262d;
             & span {
-              font-size: 1.2rem;
-              font-weight: 500;
-              line-height: 2rem;
-              color: var(--repo-color);
               margin-left: 3px;
-            }
-            &:hover {
-              border-color: #8b949e;
             }
           }
         }
@@ -538,15 +512,12 @@ export default {};
       margin-top: 2rem;
       width: 100%;
       padding: 0.6rem;
-      background: var(--aside-color);
+      background: var(--bg-aside);
       border-radius: 1rem;
       border: 1px solid #30363d;
       text-align: center;
       & a {
         color: var(--blue);
-        font-size: 1.4rem;
-        line-height: 2.1rem;
-        font-weight: 600;
       }
       &:hover {
         background: #161b22;
@@ -566,7 +537,7 @@ export default {};
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 1.8rem;
-        color: #8b949e;
+        color: var(--text-secondary);
         & span {
           margin-left: 3px;
         }
@@ -599,7 +570,7 @@ export default {};
             font-size: 1.2rem;
             line-height: 1.8rem;
             font-weight: 400;
-            color: #8b949e;
+            color: var(--text-secondary);
           }
         }
         &-links {
@@ -616,7 +587,7 @@ export default {};
                 font-size: 1.2rem;
                 line-height: 1.8rem;
                 font-weight: 400;
-                color: #8b949e;
+                color: var(--text-secondary);
                 &:hover {
                   color: var(--blue);
                   text-decoration: underline;
@@ -636,7 +607,7 @@ export default {};
       font-size: 1.4rem;
       font-weight: 600;
       line-height: 2.1rem;
-      color: var(--repo-color);
+      color: var(--text-primary);
     }
     &-explore {
       margin-top: 2rem;
@@ -647,7 +618,7 @@ export default {};
           font-size: 1.2rem;
           font-weight: 600;
           line-height: 1.8rem;
-          color: var(--repo-color);
+          color: var(--text-primary);
           &:hover {
             color: var(--blue);
           }
@@ -698,5 +669,34 @@ export default {};
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 64%;
+    padding: 30px 20px;
+    &-left {
+      width: 100%;
+      &-footer {
+        padding-bottom: 10rem;
+        &-sub {
+          &-logo {
+            display: none;
+          }
+          &-links {
+            margin-left: 0;
+            & .links-box {
+              padding-right: 6rem;
+            }
+          }
+        }
+      }
+    }
+    &-right {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 415px) {
 }
 </style>
