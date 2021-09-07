@@ -2,8 +2,6 @@
   <div>
     <Header />
     <Aside :isShowMobileMenu="isShowMobileMenu" />
-    <!--<Header />
-    <Aside />-->
     <Content />
   </div>
 </template>
