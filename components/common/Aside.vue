@@ -153,44 +153,8 @@
         </div>
       </div>
     </div>
-    <div class="aside-mobile" v-if="isShowMobileMenu">
-      <div class="aside-mobile-content">
-        <input type="text" placeholder="Search GitHub" />
-        <div class="separator" />
-        <div class="aside-mobile-content-links">
-          <ul>
-            <li><a href="#">Dashboard</a></li>
-            <div class="li-separator" />
-            <li><a href="#">Pull requests</a></li>
-            <div class="li-separator" />
-            <li><a href="#">Issues</a></li>
-            <div class="li-separator" />
-            <li><a href="#">Marketplace</a></li>
-            <div class="li-separator" />
-            <li><a href="#">Explore</a></li>
-            <div class="li-separator" />
-            <li><a href="#">Codespaces</a></li>
-            <div class="li-separator" />
-            <li><a href="#">Sponsors</a></li>
-            <div class="li-separator" />
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </aside>
 </template>
-
-<script>
-export default {
-  props: {
-    isShowMobileMenu: {
-      type: Boolean,
-      required: false,
-    },
-  },
-};
-</script>
 
 <style lang="scss">
 .aside {
