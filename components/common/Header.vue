@@ -206,7 +206,7 @@ export default {
 
 <style lang="scss">
 .container {
-  max-width: 1465px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 .header {
@@ -349,7 +349,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
   .header {
     padding: 1.6rem;
     &-content {
