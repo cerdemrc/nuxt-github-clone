@@ -1,6 +1,9 @@
-# github-clone
+# 🚀 GitHub Clone
 
-## Build Setup
+#### This is a github responsive web app clone built in Nuxt js
+#### [Live Demo](https://nuxt-github-clone.netlify.app/)
+
+<h2>🛠️ Build Setup</h2>
 
 ```bash
 # install dependencies
@@ -19,7 +22,7 @@ $ npm run generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-## Special Directories
+<h2>🧐 Special Directories </h2>
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
@@ -67,3 +70,8 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+<hr/>
+<p align="center">
+Developed with ❤️
+</p>
